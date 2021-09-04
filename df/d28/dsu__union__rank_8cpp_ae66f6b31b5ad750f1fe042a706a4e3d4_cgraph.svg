@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" target="_top" xlink:title="Self&#45;implementation Test case #1.">
+<g id="a_node2"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" target="_top" xlink:title="Self&#45;implementations, 1st test.">
 <polygon fill="white" stroke="black" points="74,-76.5 74,-95.5 112,-95.5 112,-76.5 74,-76.5"/>
 <text text-anchor="middle" x="93" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">test1</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" target="_top" xlink:title="Self&#45;implementation Test case #2.">
+<g id="a_node9"><a xlink:href="../../df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" target="_top" xlink:title="Self&#45;implementations, 2nd test.">
 <polygon fill="white" stroke="black" points="74,-114.5 74,-133.5 112,-133.5 112,-114.5 74,-114.5"/>
 <text text-anchor="middle" x="93" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>

@@ -273,10 +273,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+<p >initially all of them are their own parents</p>
 <div class="fragment"><div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n,0);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="comment">//initially all of them their own parents</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n,0);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n,0);<span class="comment"></span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">            ///initially all of them are their own parents</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n,0);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n,0);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">for</span>(uint64_t i=0;i&lt;n;i++){</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
@@ -863,29 +864,35 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                            {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="comment">//check if both belongs to same set or not</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i,j)){</div>
+<p >checks if both belongs to same set or not</p>
+<p >we find representative of the i and j</p>
+<p >always keeping the min as x in order to create a shallow tree</p>
+<p >making the shallower tree, root parent of the deeper root</p>
+<p >if same depth, then increase one's depth</p>
+<p >total size of the resultant set</p>
+<div class="fragment"><div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                            {<span class="comment"></span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">            ///checks if both belongs to same set or not</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i,j)){</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="comment">//we find representative of the i and j</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            uint64_t x = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }<span class="comment"></span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">            ///we find representative of the i and j</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span>            uint64_t x = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            uint64_t y = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="comment">//always keeping the min as x</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="comment">//in order to create a shallow tree</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x]&gt;<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]){</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">            ///always keeping the min as x</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">            ///in order to create a shallow tree</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x]&gt;<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]){</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x,y);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="comment">//making the shallower tree&#39; root parent of the deeper root</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="comment">//if same depth then increase one&#39;s depth</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]){</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }<span class="comment"></span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">            ///making the shallower tree, root parent of the deeper root</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"></span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"></span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">            ///if same depth, then increase one&#39;s depth</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]){</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="comment">//total size of the resultant set</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y]+=<a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }<span class="comment"></span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">            ///total size of the resultant set</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"></span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y]+=<a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
