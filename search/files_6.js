@@ -11,5 +11,6 @@ var searchData=
   ['fibonacci_5fmatrix_5fexponentiation_2ecpp_8',['fibonacci_matrix_exponentiation.cpp',['../da/dc9/fibonacci__matrix__exponentiation_8cpp.html',1,'']]],
   ['fibonacci_5fsearch_2ecpp_9',['fibonacci_search.cpp',['../de/d0d/fibonacci__search_8cpp.html',1,'']]],
   ['fibonacci_5fsum_2ecpp_10',['fibonacci_sum.cpp',['../de/dc3/fibonacci__sum_8cpp.html',1,'']]],
-  ['floyd_5fcycle_5fdetection_5falgo_2ecpp_11',['floyd_cycle_detection_algo.cpp',['../db/dc4/floyd__cycle__detection__algo_8cpp.html',1,'']]]
+  ['finding_5fnumber_5fof_5fdigits_5fin_5fa_5fnumber_2ecpp_11',['finding_number_of_digits_in_a_number.cpp',['../d0/d46/finding__number__of__digits__in__a__number_8cpp.html',1,'']]],
+  ['floyd_5fcycle_5fdetection_5falgo_2ecpp_12',['floyd_cycle_detection_algo.cpp',['../db/dc4/floyd__cycle__detection__algo_8cpp.html',1,'']]]
 ];
