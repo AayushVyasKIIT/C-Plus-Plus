@@ -1,5 +1,5 @@
 <map id="test2" name="test2">
-<area shape="rect" id="node1" title="Self&#45;implementation Test case #2." alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node1" title="Self&#45;implementations, 2nd test." alt="" coords="5,81,56,108"/>
 <area shape="rect" id="node2" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="287,5,331,32"/>
 <area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="122,81,191,108"/>
 <area shape="rect" id="node8" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="104,284,209,311"/>
