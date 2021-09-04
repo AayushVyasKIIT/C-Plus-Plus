@@ -1,6 +1,6 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Main function." alt="" coords="5,107,56,133"/>
-<area shape="rect" id="node2" href="$d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;implementation Test case #1." alt="" coords="104,81,155,108"/>
+<area shape="rect" id="node2" href="$d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;test implementations, 1st test." alt="" coords="104,81,155,108"/>
 <area shape="rect" id="node14" href="$d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementation Test case #2." alt="" coords="104,132,155,159"/>
 <area shape="rect" id="node3" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="385,5,429,32"/>
 <area shape="rect" id="node4" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="221,107,290,133"/>

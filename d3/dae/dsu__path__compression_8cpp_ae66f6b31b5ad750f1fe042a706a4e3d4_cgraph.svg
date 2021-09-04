@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" target="_top" xlink:title="Self&#45;implementation Test case #1.">
+<g id="a_node2"><a xlink:href="../../d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" target="_top" xlink:title="Self&#45;test implementations, 1st test.">
 <polygon fill="white" stroke="black" points="74,-247.5 74,-266.5 112,-266.5 112,-247.5 74,-247.5"/>
 <text text-anchor="middle" x="93" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">test1</text>
 </a>
