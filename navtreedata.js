@@ -129,20 +129,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"cpp/io/c/fwscanf.html",
-"cpp/string/byte/strtoul.html",
-"d1/d77/structmst.html#a59feb15588a49aac1c243bf649b97c72",
-"d2/d58/neural__network_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md6",
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md49",
-"d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861",
-"d8/d77/namespacemachine__learning.html#a05b9445c6ab65053b9bf9897a96af82d",
-"d9/d89/fibonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"dc/d14/wildcard__matching_8cpp.html#a597f5c6e23f88d339c80eb83f8a6e8ff",
-"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9b0c6400693a5cfff971f768dd5ca5ca",
-"functions_func_n.html"
+"annotated.html",
+"cpp/iterator/distance.html",
+"cpp/thread/lock.html",
+"d1/d83/classuint256__t.html#aae68a7bd17c14a926fb77758b5c8e547",
+"d3/d19/sparse__matrix_8cpp.html",
+"d4/d86/large__number_8h_source.html",
+"d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de",
+"d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a0431ec5c876e1154d8e1e5f89e1ab34a",
+"d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786",
+"d9/dd1/namespacelinear__recurrence__matrix.html",
+"db/d3c/tower__of__hanoi_8cpp.html#ab037f72a5eac476535a6cfbbcb965417",
+"dc/dc5/paranthesis__matching_8cpp.html#ade525d33459755a32ba21e1b6910ff21",
+"de/d48/struct_trie_1_1_trie_node.html",
+"functions_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
