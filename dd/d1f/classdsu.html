@@ -207,6 +207,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <p >initially, all of them are their own parents</p>
 <p >initially all have depth are equals to zero</p>
+<p >initially set size will be equals to one</p>
 <div class="fragment"><div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n,0);<span class="comment"></span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">            /// initially, all of them are their own parents</span></div>
@@ -222,9 +223,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                maxElement[i] = i;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[i] = i;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n,0);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="comment">//initially set size will be 1</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">for</span>(uint64_t i=0;i&lt;n;i++){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n,0);<span class="comment"></span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">            /// initially set size will be equals to one</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span>            <span class="keywordflow">for</span>(uint64_t i=0;i&lt;n;i++){</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i]=1;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
@@ -779,14 +780,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                            {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="comment">//check if both belongs to same set or not</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i,j)){</div>
+<p >check if both belongs to the same set or not</p>
+<p >we find the representative of <code>i</code> and <code>j</code></p>
+<div class="fragment"><div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                            {<span class="comment"></span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">            /// check if both belongs to the same set or not</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i,j)){</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="comment">//we find the representative of the i and j</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            uint64_t x = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">            /// we find the representative of `i` and `j`</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"></span>            uint64_t x = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            uint64_t y = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="comment">//always keeping the min as x</span></div>
