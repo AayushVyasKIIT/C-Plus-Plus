@@ -141,8 +141,8 @@ var NAVTREEINDEX =
 "d9/d89/fibonacci_8cpp.html",
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a",
 "dc/db5/struct_queue.html",
-"de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8",
-"functions_p.html"
+"de/d23/disjoint__set_8cpp.html#a2fb0a7cd26a477e2d48ba7e0118bc985",
+"functions_o.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

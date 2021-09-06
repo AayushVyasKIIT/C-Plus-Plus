@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('dd/d1f/classdsu.html','../../'); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a126e3002a464e53cd54b07ba56482a72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1f/classdsu.html#a126e3002a464e53cd54b07ba56482a72">dsu</a> (uint64_t n)</td></tr>
-<tr class="memdesc:a126e3002a464e53cd54b07ba56482a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt;minimum of each set to which i belongs to  <a href="../../dd/d1f/classdsu.html#a126e3002a464e53cd54b07ba56482a72">More...</a><br /></td></tr>
+<tr class="memdesc:a126e3002a464e53cd54b07ba56482a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">contructor for initialising all data members.  <a href="../../dd/d1f/classdsu.html#a126e3002a464e53cd54b07ba56482a72">More...</a><br /></td></tr>
 <tr class="separator:a126e3002a464e53cd54b07ba56482a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16851f78fe390fc1430905c83d6a2f1c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a> (uint64_t i)</td></tr>
 <tr class="memdesc:a16851f78fe390fc1430905c83d6a2f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to find the representative of the set to which i belongs to, T(n) = O(1)  <a href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">More...</a><br /></td></tr>
@@ -159,10 +159,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac0dc3e17e49fe19b159b4ea4096d7b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ade6f16c418fc98b54452f7b0252a53"><td class="memItemLeft" align="right" valign="top"><a id="a4ade6f16c418fc98b54452f7b0252a53" name="a4ade6f16c418fc98b54452f7b0252a53"></a>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>maxElement</b></td></tr>
+<tr class="memdesc:a4ade6f16c418fc98b54452f7b0252a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum of each set to which i belongs to <br /></td></tr>
 <tr class="separator:a4ade6f16c418fc98b54452f7b0252a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d77aad7fc39fe7140d834cd347e5c63"><td class="memItemLeft" align="right" valign="top"><a id="a1d77aad7fc39fe7140d834cd347e5c63" name="a1d77aad7fc39fe7140d834cd347e5c63"></a>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>minElement</b></td></tr>
-<tr class="memdesc:a1d77aad7fc39fe7140d834cd347e5c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt;maximum of each set to which i belongs to <br /></td></tr>
+<tr class="memdesc:a1d77aad7fc39fe7140d834cd347e5c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum of each set to which i belongs to <br /></td></tr>
 <tr class="separator:a1d77aad7fc39fe7140d834cd347e5c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -198,8 +199,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>&lt;minimum of each set to which i belongs to </p>
-<p >contructor for initialising all data members. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>contructor for initialising all data members. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>number of elements </td></tr>
   </table>
@@ -216,11 +217,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }<span class="comment"></span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">        /// initially all have depth are equals to zero</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n, 0);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        maxElement.assign(n, 0);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>.assign(n, 0);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>.assign(n, 0);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            maxElement[i] = i;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[i] = i;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[i] = i;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n, 0);<span class="comment"></span></div>
@@ -229,17 +230,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="ttc" id="aclassdsu_html_a1d77aad7fc39fe7140d834cd347e5c63"><div class="ttname"><a href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">dsu::minElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; minElement</div><div class="ttdoc">&lt;maximum of each set to which i belongs to</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:39</div></div>
+<div class="ttc" id="aclassdsu_html_a1d77aad7fc39fe7140d834cd347e5c63"><div class="ttname"><a href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">dsu::minElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; minElement</div><div class="ttdoc">minimum of each set to which i belongs to</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:39</div></div>
 <div class="ttc" id="aclassdsu_html_a1ef0b0462a0dda63514f641cbb7dd8cb"><div class="ttname"><a href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">dsu::p</a></div><div class="ttdeci">vector&lt; uint64_t &gt; p</div><div class="ttdoc">keeps track of the parent of ith element</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:35</div></div>
+<div class="ttc" id="aclassdsu_html_a4ade6f16c418fc98b54452f7b0252a53"><div class="ttname"><a href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">dsu::maxElement</a></div><div class="ttdeci">vector&lt; uint64_t &gt; maxElement</div><div class="ttdoc">maximum of each set to which i belongs to</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:38</div></div>
 <div class="ttc" id="aclassdsu_html_a4bf54d33fba178998dbbe4c57f2e9429"><div class="ttname"><a href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">dsu::depth</a></div><div class="ttdeci">vector&lt; uint64_t &gt; depth</div><div class="ttdoc">tracks the depth(rank) of i in the tree</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:36</div></div>
 <div class="ttc" id="aclassdsu_html_ac0dc3e17e49fe19b159b4ea4096d7b55"><div class="ttname"><a href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">dsu::setSize</a></div><div class="ttdeci">vector&lt; uint64_t &gt; setSize</div><div class="ttdoc">size of each chunk(set)</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:37</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d1f/classdsu_a126e3002a464e53cd54b07ba56482a72_cgraph.svg" width="260" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a126e3002a464e53cd54b07ba56482a72" name="a126e3002a464e53cd54b07ba56482a72"></a>
@@ -467,7 +463,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>maximum of the set to which i belongs to </dd></dl>
-<div class="fragment"><div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{ <span class="keywordflow">return</span> maxElement[<a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
+<div class="fragment"><div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[<a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i)]; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -805,7 +801,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">        /// total size of the resultant set</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"></span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y] += <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];<span class="comment"></span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">        /// changing the maximum elements</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"></span>        maxElement[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(maxElement[x], maxElement[y]);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"></span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[x], <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53">maxElement</a>[y]);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[y] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[x], <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63">minElement</a>[y]);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
 <div class="ttc" id="aclassdsu_html_a64d25c5986742f7c234ed449b2ff7303"><div class="ttname"><a href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">dsu::isSame</a></div><div class="ttdeci">bool isSame(uint64_t i, uint64_t j)</div><div class="ttdoc">A utility function which check whether i and j belongs to same set or not.</div><div class="ttdef"><b>Definition:</b> dsu_path_compression.cpp:123</div></div>

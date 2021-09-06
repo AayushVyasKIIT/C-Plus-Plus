@@ -14,6 +14,7 @@ var classdsu =
     [ "UnionSet", "dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559", null ],
     [ "unionSet", "dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f", null ],
     [ "depth", "dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429", null ],
+    [ "maxElement", "dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53", null ],
     [ "minElement", "dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63", null ],
     [ "p", "dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb", null ],
     [ "setSize", "dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55", null ]
