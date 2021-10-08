@@ -270,17 +270,17 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p >initially all of them are their own parents</p>
-<div class="fragment"><div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n,0);<span class="comment"></span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">            ///initially all of them are their own parents</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n,0);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n,0);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">for</span>(uint64_t i=0;i&lt;n;i++){</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            }</div>
+<div class="fragment"><div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                             {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>.assign(n, 0);<span class="comment"></span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">        /// initially all of them are their own parents</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>.assign(n, 0);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>.assign(n, 0);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n; i++) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] = i;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[i] = 0;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[i] = 1;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -368,13 +368,13 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>representative of the set to which i belongs to </dd></dl>
 <p >using union-rank</p>
-<div class="fragment"><div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                    {<span class="comment"></span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">            /// using union-rank</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span>            <span class="keywordflow">while</span>(i!=<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]){</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                i = <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span> i;</div>
+<div class="fragment"><div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                 {<span class="comment"></span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">        /// using union-rank</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span>        <span class="keywordflow">while</span> (i != <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            i = <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> i;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -547,15 +547,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                                               {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">while</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i]!=i){</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>.push_back(i);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                i = <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>.push_back(i);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="fragment"><div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                                            {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;uint64_t&gt;</a> <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i] != i) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>.push_back(i);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            i = <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[i];</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>.push_back(i);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -670,12 +670,12 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if element i and j are in same set </dd>
 <dd>
 <code>false</code> if element i and j are not in same set </dd></dl>
-<div class="fragment"><div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                                          {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i) == <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j)){</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="fragment"><div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                                        {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i) == <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j)) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -866,30 +866,30 @@ Here is the call graph for this function:</div>
 <p >making the shallower tree, root parent of the deeper root</p>
 <p >if same depth, then increase one's depth</p>
 <p >total size of the resultant set</p>
-<div class="fragment"><div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                            {<span class="comment"></span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">            ///checks if both belongs to same set or not</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i,j)){</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }<span class="comment"></span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">            ///we find representative of the i and j</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span>            uint64_t x = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            uint64_t y = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">            ///always keeping the min as x</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">            ///in order to create a shallow tree</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x]&gt;<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]){</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x,y);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }<span class="comment"></span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">            ///making the shallower tree, root parent of the deeper root</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"></span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"></span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">            ///if same depth, then increase one&#39;s depth</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]){</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }<span class="comment"></span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">            ///total size of the resultant set</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"></span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y]+=<a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="fragment"><div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                          {<span class="comment"></span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">        /// checks if both belongs to same set or not</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303">isSame</a>(i, j)) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }<span class="comment"></span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">        /// we find representative of the i and j</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span>        uint64_t x = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(i);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        uint64_t y = <a class="code hl_function" href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c">findSet</a>(j);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">        /// always keeping the min as x</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">        /// in order to create a shallow tree</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] &gt; <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(x, y);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }<span class="comment"></span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">        /// making the shallower tree, root parent of the deeper root</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb">p</a>[x] = y;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">        /// if same depth, then increase one&#39;s depth</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[x] == <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_variable" href="../../dd/d1f/classdsu.html#a4bf54d33fba178998dbbe4c57f2e9429">depth</a>[y]++;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }<span class="comment"></span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">        /// total size of the resultant set</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"></span>        <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[y] += <a class="code hl_variable" href="../../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55">setSize</a>[x];</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
