@@ -101,6 +101,7 @@ var namespaces_dup =
     [ "gram_schmidt", "d4/d0f/namespacegram__schmidt.html", null ],
     [ "graph", "df/dce/namespacegraph.html", "df/dce/namespacegraph" ],
     [ "hamming_distance", "d4/d1c/namespacehamming__distance.html", null ],
+    [ "hashing", "d6/d0c/namespacehashing.html", null ],
     [ "heavy_light_decomposition", "db/d6f/namespaceheavy__light__decomposition.html", null ],
     [ "horspool", "d5/d02/namespacehorspool.html", null ],
     [ "house_robber", "d2/de1/namespacehouse__robber.html", null ],
@@ -130,6 +131,7 @@ var namespaces_dup =
     [ "magic_sequence", "d8/d93/namespacemagic__sequence.html", null ],
     [ "manacher", "d8/dc6/namespacemanacher.html", null ],
     [ "math", "dd/d47/namespacemath.html", "dd/d47/namespacemath" ],
+    [ "MD5", "dd/d43/namespace_m_d5.html", null ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],
     [ "mincoins_topdown", "d5/db8/namespacemincoins__topdown.html", null ],
@@ -148,6 +150,7 @@ var namespaces_dup =
     [ "palindrome_partitioning", "d5/d89/namespacepalindrome__partitioning.html", null ],
     [ "pancake_sort", "df/d10/namespacepancake__sort.html", null ],
     [ "postfix_expression", "d4/de6/namespacepostfix__expression.html", null ],
+    [ "probability", "d4/ded/namespaceprobability.html", "d4/ded/namespaceprobability" ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", [
       [ "eigen_values", "d2/d3b/namespaceqr__algorithm.html#a28e2fa3e803abaea6c568dc45d69d8cc", null ],
       [ "operator<<", "d2/d3b/namespaceqr__algorithm.html#adfbdf47277c8cfee229b05b72f1f7834", null ],
@@ -167,6 +170,7 @@ var namespaces_dup =
     [ "saddleback", "d0/dda/namespacesaddleback.html", null ],
     [ "search", "d9/dca/namespacesearch.html", "d9/dca/namespacesearch" ],
     [ "selection_sort_recursive", "df/d4a/namespaceselection__sort__recursive.html", null ],
+    [ "SHA", "de/dd3/namespace_s_h_a.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
@@ -264,6 +268,7 @@ var namespaces_dup =
     [ "wave_sort", "d9/d21/namespacewave__sort.html", null ],
     [ "wiggle_sort", "d0/d52/namespacewiggle__sort.html", null ],
     [ "wildcard_matching", "db/d03/namespacewildcard__matching.html", null ],
+    [ "windowed_median", "dd/d21/namespacewindowed__median.html", null ],
     [ "word_break", "d6/d53/namespaceword__break.html", null ],
     [ "XOR", "d7/d47/namespace_x_o_r.html", null ]
 ];
