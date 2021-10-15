@@ -97,6 +97,7 @@ var namespaces_dup =
     ] ],
     [ "false_position", "df/dea/namespacefalse__position.html", null ],
     [ "fibonacci_sum", "d3/dc9/namespacefibonacci__sum.html", null ],
+    [ "geometric_dist", "dd/d8a/namespacegeometric__dist.html", null ],
     [ "geometry", "d5/d5f/namespacegeometry.html", "d5/d5f/namespacegeometry" ],
     [ "gram_schmidt", "d4/d0f/namespacegram__schmidt.html", null ],
     [ "graph", "df/dce/namespacegraph.html", "df/dce/namespacegraph" ],
@@ -150,6 +151,7 @@ var namespaces_dup =
     [ "palindrome_partitioning", "d5/d89/namespacepalindrome__partitioning.html", null ],
     [ "pancake_sort", "df/d10/namespacepancake__sort.html", null ],
     [ "postfix_expression", "d4/de6/namespacepostfix__expression.html", null ],
+    [ "prefix_sum_array", "d7/d88/namespaceprefix__sum__array.html", null ],
     [ "probability", "d4/ded/namespaceprobability.html", "d4/ded/namespaceprobability" ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", [
       [ "eigen_values", "d2/d3b/namespaceqr__algorithm.html#a28e2fa3e803abaea6c568dc45d69d8cc", null ],
